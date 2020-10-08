@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>おみくじ</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+
+  <body>
+    <div id="btn" class="btn1">?</div>
+    <script>
+      'use strict'
+
+{
+  const btn=document.getElementById('btn');
+  btn.addEventListener('click',()=>{
+    const results=['大吉','中吉','凶','末吉'];
+    btn.textContent=results[Math.floor(Math.random()*results.length)];
+  });
+}
+    </script>
+  </body>
+</html>
